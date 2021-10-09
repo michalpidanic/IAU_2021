@@ -1,6 +1,5 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,windows,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,windows,macos
+# Created by https://www.toptal.com/developers/gitignore/api/macos,python,windows,jupyternotebooks,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,python,windows,jupyternotebooks,visualstudiocode
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
@@ -182,6 +181,22 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -208,4 +223,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,windows,macos
+# End of https://www.toptal.com/developers/gitignore/api/macos,python,windows,jupyternotebooks,visualstudiocode

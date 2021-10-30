@@ -39,7 +39,6 @@ Identifikujte závislostí medzi dvojicami atribútov a závislosti medzi predik
 Sformulujte dve hypotézy o dátach v kontexte zadanej predikčnej úlohy. Príkladom je napr. pacienti s danou chorobou majú v priemere inú (vyššiu/nižšiu) hodnotu nejakej látky alebo hormónu ako pacienti bez danej choroby.
 Sformulované hypotézy overte vhodne zvoleným štatistickým testom.
 ## 4. Identifikácia problémov v dátach s navrhnutým riešením (3 body)
-### **Zistiť čo s NaN dátami!**
 Identifikujte problémy v dátach napr.: nevhodná štruktúra dát, duplicitné záznamy, nejednotné formáty, chýbajúce hodnoty, vychýlené hodnoty. V dátach sa môžu nachádzať aj iné, tu nevymenované problémy.
 Navrhnuté riešenie prvotne realizujte na dátach.
 

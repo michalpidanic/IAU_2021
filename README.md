@@ -50,9 +50,37 @@ Správu elektronicky odovzdá jeden člen z dvojice do systému AIS do nedele 31
 
 # Fáza 2 - predspracovanie údajov (v 9. týždni): 20% = 20 bodov
 V tejto fáze sa od Vás očakáva:
+
+Realizujte predspracovanie údajov pre strojové učenie. Výsledkom bude upravená dátová sada vo formáte csv alebo tsv, kde jedno pozorovanie musí byť opísané jedným riadkom.
+
+V 3. fáze budeme pracovať s algoritmami strojového učenia, ktorých implementácia v scikit-learn podporuje len numerické dáta. To vedie k tomu že treba niečo spraviť s nenumerickými dátami.
+
+Replikovateľnosť predspracovania na trénovacej a testovacej množine dát.
+Keď sa predspracovaním mohol zmeniť tvar a charakteristiky dát (počet atribútov, distribúcie hodnôt a pod.), je možné že treba znovu zrealizovať podstatné časti prieskumnej analýzy a opakovane podľa Vašej potreby. Bodovanie znovu za EDA už nebudeme, zmeny ale zdokumentujte. Problém s dátami môžete riešiť iteratívne v každej fáze aj vo všetkých fázach podľa vlastnej potreby.
+ 
+## 1. Integrácia a čistenie dát (5b)
+Transformujte dáta na vhodný formát pre strojové učenie t.j. jedno pozorovanie musí byť opísané jedným riadkom a každý atribút musí byť v numerickom formáte. 
+Pri riešení chýbajúcich hodnôt (missing values) vyskúšajte rôzne stratégie z nasledujúcich podskupín:  
+- odstránenie pozorovaní s chýbajúcimi údajmi  
+- nahradenie chýbajúcej hodnoty mediánom, priemerom, pomerom (ku korelovanému atribútu), alebo pomocou lineárnej regresie resp. kNN  
+
+Podobne postupujte aj pri riešení vychýlených hodnôt (outlier detection):  
+- odstránenie vychýlených (odľahlých) pozorovaní  
+- nahradenie vychýlenej hodnoty hraničnými hodnotami rozdelenia (5% resp. 95%)
+## 2. Realizácia predspracovania dát (5b)
+Transformované dáta pre strojové učenie si rozdeľuje na trénovaciu a testovaciu množinu (train and test dataset) podľa vami preddefinovaným pomerom. Naďalej pracujte len s trénovacím datasetom.  
+Transformujte atribútov dát pre strojové učenie podľa dostupných techník (minimálne 2 techniky) ako scaling, transformers a ďalšie.  
+Zdôvodnite Vašu voľby/rozhodnutie pre realizáciu (t.j. zdokumentovanie)
+## 3. Výber atribútov pre strojové učenie (5b)
+Zistite ktoré atribúty (features) vo vašich dátach pre strojové učenie sú informatívne k atribútu “indikator”.  
+Zoradíte tie atribúty v poradí podľa dôležitosti.  
+Zdôvodnite Vašu voľby/rozhodnutie pre realizáciu (t.j. zdokumentovanie) 
+## 4. Replikovateľnosť predspracovania (5b)
+Upravte váš kód realizujúci predspracovanie trénovacej množiny tak, aby ho bolo možné bez ďalších úprav znovu použiť na predspracovanie testovacej množiny (napr. pomocou funkcie/í)  
+Očakáva sa aj využitie možnosti sklearn.pipeline
  
 Správa sa odovzdáva v 9. týždni semestra
-Na cvičení, dvojica svojmu cvičiacemu odprezentuje vykonanú prieskumnú analýzu v Jupyter Notebooku.
+Na cvičení, dvojica svojmu cvičiacemu odprezentuje vykonanú prieskumnú analýzu v Jupyter Notebooku.  
 Správu elektronicky odovzdá jeden člen z dvojice do systému AIS do nedele 21.11.2021 23:59.
 
 # Fáza 3 - strojové učenie (v 12. týždni): 20% = 20 bodov

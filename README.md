@@ -87,18 +87,18 @@ Správu elektronicky odovzdá jeden člen z dvojice do systému AIS do nedele 21
 Pri dátovej analýze nemusí byť naším cieľom získať len znalosti obsiahnuté v aktuálnych dátach, ale aj natrénovať model, ktorý bude schopný robiť rozumné predikcie pre nové pozorovania pomocou strojového učenia.
 V tejto fáze sa od Vás očakáva:
  
-1. Manuálne vytvorenie a vyhodnotenie rozhodovacích pravidiel pre klasifikáciu (5b)
+## 1. Manuálne vytvorenie a vyhodnotenie rozhodovacích pravidiel pre klasifikáciu (5b)
 Naimplementujte 1R algorithm (1R or OneR), ktorý je jednoduchá klasifikácia t.j. rozhodnutie na základe jedného atribútu. Môžete implementovať komplikovanejšie t.j. zahŕňajúce viacero atribútov (ich kombinácie).
 Pravidlá by v tomto kroku mali byť vytvorené manuálne na základe pozorovaných závislostí v dátach. Vyhodnoťte klasifikátor pomocou metrík accuracy, precision a recall.
-2. Natrénovanie a vyhodnotenie klasifikátora strojového učenia (5b)
+## 2. Natrénovanie a vyhodnotenie klasifikátora strojového učenia (5b)
 Na trénovanie využite minimálne jeden stromový algoritmus strojového učenia v scikit-learn.
 Vizualizujte natrénované pravidlá.
 Vyhodnoťte natrénovaný model pomocou metrík accuracy, precision a recall
 Porovnajte natrénovaný klasifikátor s Vašimi manuálne vytvorenými pravidlami z prvého kroku.
-3. Optimalizácia - hyperparameter tuning (5b)
+## 3. Optimalizácia - hyperparameter tuning (5b)
 Preskúmajte hyperparametre Vášho zvoleného klasifikačného algoritmu v druhom kroku a vyskúšajte ich rôzne nastavenie tak, aby ste minimalizovali overfitting (preučenie) a optimalizovali výsledok. 
 Vysvetlite, čo jednotlivé hyperparametre robia. Pri nastavovaní hyperparametrov algoritmu využite krížovú validáciu (cross validation) na trénovacej množine.
-4. Vyhodnotenie vplyvu zvolenej stratégie riešenia na klasifikáciu (5b)
+## 4. Vyhodnotenie vplyvu zvolenej stratégie riešenia na klasifikáciu (5b)
 Vyhodnotíte Vami zvolené stratégie riešenia projektu z hľadiska classification accuracy: 
 
 Stratégie riešenia chýbajúcich hodnôt a outlierov;
